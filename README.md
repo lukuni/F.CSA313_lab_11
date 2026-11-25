@@ -79,10 +79,10 @@ Starter дээр 63-аас 46 мутант амьд үлдсэн. Бүгдийг
 | Хэмжилт | Өөрчлөлт | Killed / Generated | Mutation Coverage | Test strength | Файл |
 |---|---|---|---|---|---|
 | Эхлэл | starter-ийн сул тест | 17 / 63 | 27% | 27% | `results/pit-start.txt` |
-| B1 | assertion-ууд яг утгын | _[??]_ / 63 | _[??%]_ | _[??%]_ | `results/pit-B1.txt` |
+| B1 | assertion-ууд яг утгын | 45 / 63 | 71% | 71% | `results/pit-B1.txt` |
 | B2 | + зааг утгын тестүүд | _[??]_ / 63 | _[??%]_ | _[??%]_ | `results/pit-B2.txt` |
 
-- **B1:** `assertNotNull`, `assertTrue(муж)`-ийг оролтыг нь өөрчлөхгүйгээр `assertEquals`-аар солив. _[B1-ийн дараа ямар төрлийн мутант үлдсэнийг бич — зааг (boundary) мутантууд.]_
+- **B1:** `assertNotNull`, `assertTrue(муж)`-ийг оролтыг нь өөрчлөхгүйгээр `assertEquals`-аар солив. B1-ийн дараа 18 мутант амьд үлдсэн: 13 нь changed conditional boundary, 5 нь removed conditional (replaced comparison check with true) — бүгд зааг утгын тест дутуугаас үүдэлтэй.
 - **B2:** letterGrade-ийн 90/89.99, 80/79.99, 70/69.99, 60/59.99, 0, 100; scholarship-ийн 3.8/15, 3.4/12, 3.0 заагууд, gpa 0 ба 4, credits 0, сөрөг оролт; gpa-гийн бүх үсгэн дүн тус бүрээр.
 
 Эцсийн PIT тайлан:
